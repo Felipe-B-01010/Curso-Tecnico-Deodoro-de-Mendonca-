@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/incone-do-site.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/semestres.css">
+    <title>Semestres</title>
+
+
+    <style>
+       
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <nav class="menu">
+        <ul>
+            <a href="./cursos.html">
+                <li> Pagina Inicial</li>
+            </a>
+
+        </ul>
+    </nav>
+    <div class="painel">
+
+        <div class="semestres">
+
+            <div class="titulo">
+                <h1> Disciplinas por Semestres </h1>
+            </div>
+
+            <div class="semestre">
+                <h1>1º Semestre</h1>
+                <ul class="disciplina">
+                    <li><a href="./disciplinas/rede.html">Redes de Computadores</a></li>
+                    <li><a href="./disciplinas/tecweb.html">Tecnologias Web</a></li>
+                    <li><a href="./disciplinas/manutencao.html">Manutenção de Computadores</a></li>
+                    <li><a href="./disciplinas/informatica.html">Informática</a></li>
+                    <li><a href="./disciplinas/banco-de-dados.html">Banco de Dados </a></li>
+                    <li><a href="./disciplinas/log-prog.html">Lógica de Programação</a></li>
+
+                </ul>
+            </div>
+
+            <div class="semestre">
+                <h1>2º Semestre</h1>
+
+                <ul class="disciplina">
+                    <li>Grade não liberada</li>
+                </ul>
+            </div>
+
+            <div class="semestre">
+                <h1>3º Semestre</h1>
+
+                <ul class="disciplina">
+                    <li>Grade não Liberada</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="boas-vindas">
+            <h1>Bem vindo ao seu painel de estudos </h1>
+            <h2>Aqui você encontra as disciplinas que irá cursa no semestre Atual</h2>
+            <img src="./img/logo-pc.png" alt="">
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelectorAll('.semestre h1').forEach(h1 => {
+            h1.addEventListener('click', () => {
+                const ul = h1.nextElementSibling;
+                ul.classList.toggle('expandido');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

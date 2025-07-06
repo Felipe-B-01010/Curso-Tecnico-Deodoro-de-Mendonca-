@@ -1,0 +1,85 @@
+@charset "UTF-8";
+ 
+ * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      color: #ffffff;
+
+      background-color: #264e65;
+      font-family: 'Times New Roman', Times, serif;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .fundo {
+      background-color: #9d9d9d;
+      width: 500px;
+      height: 500px;
+      margin: 67px auto 5px auto;
+      text-align: center;
+      border-radius: 31px;
+
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      border: 2px solid rgb(0, 0, 0);
+
+    }
+
+
+    .informacao-topo {
+      margin-left: 18px;
+      margin-top: 30px;
+      justify-items: center;
+
+    }
+
+
+    .informacao-esquerda {
+      position: absolute;
+      top: 370px;
+      left: 20px;
+    }
+
+
+    .dados input {
+      width: 200px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+
+    .btn {
+      width: 100px;
+      padding: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      transition: 1s;
+      color: black;
+
+
+    }
+
+    .btn:hover {
+      background-color: #60a338;
+      color: #ffffff;
+      width: 200px;
+
+    }
+
+    .secreto {
+      position: absolute;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      color: black;
+      margin-left: 2px;
+      margin-top: -3px;
+
+    }

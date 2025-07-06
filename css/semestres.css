@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #264e65;
+}
+
+
+div.painel {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+
+
+}
+
+
+/* ######### AREA DE TRABALHO COM A ARÉA DE NAVEGAÇÃO #################*/
+
+nav.menu {
+    border: 3px solid black;
+    color: #ffffff;
+    background-color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 6px;
+
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    text-align: center;
+    margin-left: 10px;
+
+
+}
+
+nav li {
+    background: #264e65;
+    padding: 10px;
+
+    border-radius: 20px;
+    width: 120px;
+    transition: background-color 0, 15s ease;
+
+
+}
+
+nav li:hover {
+    background-color: rgb(122, 121, 67);
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+div.titulo {
+    clip-path: polygon(0% 0%, 75% 0%, 81% 50%, 75% 100%, 0% 100%);
+    background: #f3f2f2;
+    width: 700px;
+    margin-top: 20px;
+    border: 2px solid black;
+    color: #2900ff;
+    padding-left: 10px;
+}
+
+
+/* ################## ARÉA DE TRABALHO COM O SEMESTRES ##################### */
+
+div.semestre h1 {
+    clip-path: polygon(0% 0%, 75% 0%, 81% 50%, 75% 100%, 0% 100%);
+    background: rgb(255, 255, 255);
+    width: 500px;
+    margin: 10px 10px 10px 0px;
+    padding-left: 35px;
+
+    cursor: pointer;
+    border-bottom: 3px solid black;
+}
+
+
+
+div.semestre ul {
+    padding-left: 10px;
+
+    /* ADICIONANDO A FUNCIONALIDADE DE RECONHER A LISTA */
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+
+}
+
+
+div.semestre ul.expandido {
+    max-height: 500px;
+}
+
+
+
+div.semestre li {
+    background: #f3f2f2;
+    margin-bottom: 10px;
+    width: 300px;
+    padding: 4px;
+    text-align: center;
+}
+
+
+/* ##############    TRALHANDO COM OS <A>  ###################### */
+
+ul.disciplina a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(13, 16, 173);
+}
+
+ul.disciplina a:hover {
+    color: rgb(1, 46, 9);
+}
+
+
+
+
+
+/* ##############   AREA DE BOAS VINDAS  ###################### */
+
+
+div.boas-vindas {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}

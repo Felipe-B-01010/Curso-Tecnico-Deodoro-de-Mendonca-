@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/incone-do-site.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/cursos.css">
+    <title>Cursos</title>
+
+</head>
+
+<body>
+
+    <div class="corpo">
+
+        <nav class="menu">
+            <ul>
+                <a href="./index.html">
+                    <li>Logoff</li>
+                </a>
+                <a href="./sobre.html">
+                    <li>Quem Somos</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+
+            </ul>
+        </nav>
+
+
+        <img class="curva" src="./img/svg.png" alt="">
+
+        <img class="logo" src="./img/logo.png" alt="">
+
+        <div class="cursos">
+            <a href="" class="breve"> <img class="curso" src="./img/8-removebg-preview.png" alt=""></a>
+            <a href="" class="breve"> <img class="curso" src="./img/9-removebg-preview.png" alt=""></a>
+
+        </div>
+        <div class="cursos">
+            <a href="./semestres.html"><img class="curso" src="./img/10-removebg-preview.png" alt=""></a>
+            <a href="" class="breve"><img class="curso" src="./img/11-removebg-preview.png" alt=""></a>
+        </div>
+
+    </div>
+
+    <script>
+
+
+
+
+        // ############   SCRIPT PARA ADICIONAR MENSSAGEM EM ALGUNS CURSOS
+
+
+        // Seleciona todos os <a> com a classe "breve"
+        const linksBreve = document.querySelectorAll('.breve');
+
+        // Adiciona evento de clique em cada um
+        linksBreve.forEach(link => {
+            link.addEventListener('click', function (event) {
+                event.preventDefault(); // Impede que o link redirecione
+                alert("Prepare-se! O curso será lançado em breve e você não vai querer ficar de fora");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

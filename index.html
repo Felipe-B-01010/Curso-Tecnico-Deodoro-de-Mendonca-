@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/incone-do-site.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Login</title>
+
+
+</head>
+
+
+<body>
+  <div class="pagina">
+
+  <div class="informacao-topo">
+    <h1>SMA -</h1>
+    <h2>Sistema de Matérias Acadêmico</h2>
+
+  </div>
+
+  <div class="informacao-esquerda">
+    <h1>Ensino SECTET</h1>
+    <h2>Tudo Começa com um lápis e papel.</h2>
+  </div>
+
+  <div class="fundo">
+    <h2>Login do Aluno</h2>
+
+    <div class="dados">
+      <h1>Matricula</h1>
+      <input type="text" id="matricula" name="matricula" required placeholder="Por favor digite sua Matricula " />
+    </div>
+
+    <div class="dados">
+      <h1>Senha</h1>
+      <input type="password" id="senha" name="senha" required placeholder="Por favor digite sua Senha " />
+      <button class="secreto" type="button" onclick="mostrarSenha()"> 👁️ </button>
+    </div>
+
+
+
+    <button onclick="validarLogin()" class="btn">Entrar</button>
+    <footer>© 2025 Sistema Escolar </footer>
+
+
+
+  </div>
+  <img src="./img/7-removebg-preview.png" alt="" style="margin-top:-241px;">
+
+
+</div>
+
+    <!-- ##############   UTILIZANDO JAVA SCRIPT  #################### -->
+
+  <script>
+    function mostrarSenha() {
+      const campo = document.getElementById("senha");
+      campo.type = campo.type === "password" ? "text" : "password";
+    }
+
+
+  function mostrarSenha() {
+    const campo = document.getElementById("senha");
+    campo.type = campo.type === "password" ? "text" : "password";
+  }
+
+  function validarLogin() {
+    const matricula = document.getElementById("matricula").value;
+    const senha = document.getElementById("senha").value;
+
+    // Aqui definimos um login válido
+    const matriculaCorreta = "alunotecnico";
+    const senhaCorreta = "2025";
+
+    if (matricula === matriculaCorreta && senha === senhaCorreta) {
+      // Redireciona para a página desejada
+      window.location.href = "./cursos.html";
+    } else {
+      alert("Matrícula ou senha incorreta.");
+    }
+  }
+
+  </script>
+
+  
+</body>
+
+</html>

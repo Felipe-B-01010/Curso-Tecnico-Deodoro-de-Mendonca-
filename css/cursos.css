@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+   * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #264e65;
+        }
+
+
+        /* ##############    TRABALHANDO NO MENU DE NAVEGAÇÃO  #############*/
+        nav {
+            border: 3px solid black;
+            color: #ffffff;
+            background-color: #ffffff;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            margin-top: 100px;
+            padding: 6px;
+
+
+
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 13px;
+            text-align: center;
+            margin-left: 10px;
+
+
+        }
+
+        nav li {
+            background: #264e65;
+            padding: 10px;
+
+            border-radius: 20px;
+            width: 120px;
+            transition: background-color 0, 15s ease;
+
+
+        }
+
+        nav li:hover {
+            background-color: rgb(122, 121, 67);
+        }
+
+
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+
+
+
+        /* ###############   TRABALHANDO COM AS IMAGENS DE LOGO E CURVA DO CURSO ##################### */
+        .logo {
+            width: 100px;
+            height: 80px;
+            background-color: #1C3442;
+            border-radius: 30px;
+            position: absolute;
+
+            left: 20px;
+            top: 10px;
+
+
+        }
+
+        .curva {
+            width: 100vw;
+            height: 100px;
+        }
+
+
+
+
+        /* ##########   TRABALHANCO COM A AREA DE CURSOS ############################# */
+
+        div.cursos {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            object-position: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+
+        .curso {
+            width: 207px;
+            height: 200px;
+
+        }
+
+        /* #############   TRABALHANCO COM AS IMAGENS DOS DEVIDOS CURSOS, PARA EFEITO DE ZOOM AO PASSAR O MOUSE POR CIMA ############# */
+
+        .cursos a {
+            transition: transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .cursos a:hover {
+            transform: scale(1.1);
+        }

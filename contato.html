@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/incone-do-site.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/contato.css">
+    <title>Contato</title>
+
+
+</head>
+
+<body>
+
+    <div class="corpo">
+
+        <nav class="menu">
+            <ul>
+                <a href="./cursos.html">
+                    <li> Pagina Inicial</li>
+                </a>
+
+            </ul>
+        </nav>
+
+
+        <img class="curva" src="./img/svg.png" alt="">
+
+        <img class="logo" src="./img/logo.png" alt="">
+
+        <div class="detalhes">
+            <h1 style="color: rgb(24, 22, 22);">Dúvidas? Entre em contato Conosco</h1>
+
+            <p>Gostaria de falar com a gente? Você pode preencher o formulário abaixo.</p>
+
+
+            <form action="https://formspree.io/f/mdkzzgkw" method="POST">
+
+                <label>
+                    Nome:
+                    <input type="text" name="nome" required>
+                </label>
+
+                <label>
+                    Email:
+                    <input type="email" name="email" required>
+                </label>
+
+                <fieldset>
+                    <legend>Assunto:</legend>
+                    <label><input type="radio" name="assunto" value="Dúvida" required> Dúvida sobre os Cursos</label>
+                    <label><input type="radio" name="assunto" value="Sugestão"> Sugestão</label>
+                    <label><input type="radio" name="assunto" value="Reportar Erro"> Reportar Erro</label>
+                    <label><input type="radio" name="assunto" value="Elogio"> Outros</label>
+                </fieldset>
+
+                <label>
+                    Mensagem:
+                    <textarea name="mensagem" rows="4" cols="30" required></textarea>
+                </label>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+
+        </div>
+
+
+
+</body>
+
+</html>
